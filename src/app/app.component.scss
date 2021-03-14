@@ -1,0 +1,404 @@
+.app-menu {
+    .navbar-nav {
+        .nav-link {
+            font: normal normal normal 20px/26px Open Sans;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+        }
+    }
+}
+
+.btn-fill{
+    background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 20px #00000033;
+border-radius: 24px;
+opacity: 1;
+font-size: 16px !important;
+width: 166px;
+height: 45px;
+text-align: center;
+letter-spacing: 0px;
+color: #FFFFFF !important;
+opacity: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.btn-border{
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #663399 !important;
+    opacity: 1;
+    width: 118px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 16px !important;
+}
+.fixed-top{
+   position: absolute;
+}
+.home-banner{
+    .wrapper{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+    }
+    .left-section{
+        position: relative;
+        .bg-small{
+            background-size: auto;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: -160px 180px;
+            .left-wrapper{
+                position: absolute;
+                top: 25%;
+                left: 25%;
+                width: 100%;
+                .middle-img{
+                    margin-top: 70px;
+                    z-index: 1;
+                    position: relative;
+                    img{
+                        max-width: 500px;
+                    }
+                }
+                .first-img{
+                    margin-top: -240px;
+                    z-index: 1;
+                    position: relative;
+                    width: 330px;
+                    height: 200px;
+                    box-shadow: 0px 0px 30px #2321321f;
+                    border-radius: 20px;
+                    background: #F9F9F9;
+                }
+                .second-img{
+                    margin-top: 55px;
+                    z-index: 1;
+                    position: relative;
+                    width: 330px;
+                    height: 200px;
+                    box-shadow: 0px 0px 30px #2321321f;
+                    border-radius: 20px;
+                    background: #F9F9F9;
+                }
+                .third-img{
+                    margin-top: 50px;
+                    z-index: 1;
+                    position: relative;
+                    width: 330px;
+                    height: 200px;
+                    box-shadow: 0px 0px 30px #2321321f;
+                    border-radius: 20px;
+                    background: #F9F9F9;
+                }
+                .icon{
+                   position: absolute;
+                   top: 5%;
+                   left: 8%;
+                }
+                .bottom-img{
+                    margin-top: -34px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .card-text{
+                    position: relative;
+                    top: 53%;
+                    left: 10%;
+                    width: 80%;
+                 }
+
+                 .card-text-description{
+                    position: relative;
+                    top: 90px;
+                    left: 35px;
+                    color: #999999;
+                    width: 80%;
+                 }
+                 
+            }
+        .middle-wrapper{
+            position: absolute;
+            left: 95%;
+            top: 10%;
+            width: 100%;
+            .second-img{
+                margin-top: -28px;
+                z-index: 1;
+                position: relative;
+                width: 330px;
+                height: 200px;
+                box-shadow: 0px 0px 30px #2321321f;
+                border-radius: 20px;
+                background: #F9F9F9;
+            }
+            .third-img{
+                margin-top: 65px;
+                z-index: 1;
+                position: relative;
+                width: 330px;
+                    height: 200px;
+                    box-shadow: 0px 0px 30px #2321321f;
+                    border-radius: 20px;
+                    background: #F9F9F9;
+            }
+            .icon{
+                position: absolute;
+                top: 5%;
+                left: 8%;
+             }
+             .card-text{
+                position: relative;
+                top: 53%;
+                left: 10%;
+                width: 80%;
+             }   
+             .card-text-description{
+                position: relative;
+                top: 90px;
+                left: 35px;
+                color: #999999;
+                width: 80%;
+                
+             }
+             :hover {
+                background-color: #be8edf;
+                opacity: 1px;
+                color: #FFFFFF;
+              }
+        }
+            h1{
+                position: relative;
+                margin-left: 20px;
+                &::before{
+                    content: '';
+                    background: #000;
+                    height: 7px;
+                    width: 32%;
+                    position: absolute;
+                    bottom: -15px;
+                    border-radius: 4px;
+                    opacity: 0.7;
+                }
+            }  
+        }
+    }
+    .right-section{
+        .bg-big{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: 12px -233px;
+            position: relative;
+            .right-wrapper{
+                position: absolute;
+                top: 25%;
+                width: 600px;
+                left: 25%;
+                h1{
+                    position: relative;
+                    margin-left: 20px;
+                    &::before{
+                        content: '';
+                        background: #000;
+                        height: 7px;
+                        width: 32%;
+                        position: absolute;
+                        bottom: -15px;
+                        border-radius: 4px;
+                        opacity: 0.7;
+                    }
+                } 
+                .form-wrapper{
+                    max-width: 350px;
+                    border-radius: 15px;
+                    z-index: 1;
+                    position: relative;
+                    .title{
+                        font-size: 16px;
+                        background-color: #fafbfd;
+                        margin-bottom: 0;
+                        padding: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                    label{
+                        color: #595959;
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+                    .form-group{
+                        p{
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                       ::ng-deep .mat-slider-horizontal{
+                            width: 100%;
+                            height: 0;
+                            .mat-slider-wrapper{
+                                top: 4px;
+                                height: 3px;
+                                left: 0px;
+                                right: 0px;
+                            }
+                            .mat-slider-track-wrapper{
+                                height: 3px;
+                            }
+                            .mat-slider-ticks-container{
+                                height: 3px;
+                            }
+                            .mat-slider-ticks{
+                                height: 3px;
+                            }
+                            .mat-slider-track-background{
+                                height: 3px;
+                            }
+                        }
+                        .note{
+                            font-size: 10px;
+                            color: #c8b6b6;
+                        }
+                        ::ng-deep{
+                            .mat-accent .mat-slider-track-fill, .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label{
+                                background-color: #663399;
+                            }
+                            .mat-slider-horizontal .mat-slider-track-fill{
+                                height: 3px;    
+                            }
+                            .mat-slider-track-background {
+                                background-color: rgb(182 164 164 / 24%);
+                            }
+                            .mat-slider-thumb{
+                                right: -10px;
+                                bottom: -6px;
+                                box-sizing: border-box;
+                                width: 13px;
+                                height: 13px;
+                                border: 2px solid #ffffff78;
+                                border-radius: 50%;
+                                transform: scale(1);
+                            }
+                        }
+                        .mat-slider{
+                            padding: 0;
+                        }
+                        .mat-select{
+                            border-bottom: 1px solid #c1bcbc;
+                        }
+                        .custom-control-input:checked ~ .custom-control-label::before{
+                            background-color: #663399;
+                            border-color: #663399;
+                        }
+                    }
+                }
+                .money-card{
+                    position: absolute;
+                    right: 77px;
+                    top: 75px;
+                    height: 70%;
+                    background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+                    width: 33%;
+                    border-radius: 12%;
+                }
+                .money-banner{
+                    position: absolute;
+                    top: 20%;
+                    left: 24%;
+                    color: aliceblue;
+                    font-weight: 200;
+                    letter-spacing: 4px;
+                }
+                .money-banner-amt{
+                    position: absolute;
+                    top: 29%;
+                    left: 32%;
+                    color: aliceblue;
+                }
+                .emi-banner{
+                    position: absolute;
+                    top: 43%;
+                    left: 17%;
+                    color: aliceblue;
+                    font-weight: 200;
+                    letter-spacing: 4px;
+                }
+                .emi-banner-amt{
+                    position: absolute;
+                    top: 52%;
+                    left: 36%;
+                    color: aliceblue;
+                }
+                .get-money-btn{
+                    position: absolute;
+                    top: 68%;
+                    left: 25%;
+                    background-color: white;
+                    border-radius: 20px;
+                    height: 44px;
+                    padding: 8px;
+                    width: 122px;
+                }
+                .btn-emi-txt{
+                    color: #663399;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+
+            .section-wrapper{
+                position: absolute;
+                top: 25%;
+                width: 600px;
+                left: 45%;
+                h1{
+                    position: relative;
+                    margin-left: 20px;
+                    &::before{
+                        content: '';
+                        background: #000;
+                        height: 7px;
+                        width: 32%;
+                        position: absolute;
+                        bottom: -15px;
+                        border-radius: 4px;
+                        opacity: 0.7;
+                    }
+                } 
+              .banner-text{
+              margin-left: 20px;
+              color: gray;
+            }
+            .get-money-btn{
+                position: absolute;
+                top: 100%;
+                left: 2%;
+                background-color: transparent;
+                border: 1px solid #663399;
+                border-radius: 20px;
+                height: 47px;
+                padding: 8px;
+                width: 211px;
+            }
+            .btn-emi-txt{
+                color: #663399;
+                font-size: 14px;
+                text-align: center;
+            }
+            }
+        }
+    }
+}
+

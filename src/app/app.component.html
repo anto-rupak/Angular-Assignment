@@ -1,0 +1,183 @@
+<nav class="navbar navbar-expand-lg fixed-top brightH app-menu">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="../assets/images/logo.png" class="app-logo" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item order-3 order-md-1">
+          <a class="nav-link mr-4" href="#">Products</a>
+        </li>
+        <li class="nav-item order-3 order-md-1">
+          <a class="nav-link mr-4" href="#">Solutions</a>
+        </li>
+        <li class="nav-item order-3 order-md-1">
+          <a class="nav-link mr-4" href="#">Pricing</a>
+        </li>
+        <li class="nav-item order-3 order-md-1">
+          <a class="nav-link mr-4 btn-border" href="#">Login</a>
+        </li>
+        <li class="nav-item order-3 order-md-1">
+          <a class="nav-link mr-4 btn-fill" href="#">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="home-banner">
+  <div class="wrapper">
+    <div class="left-section">
+      <div class="bg-small" [ngStyle]="{'background-image': 'url(' + bgSmall + ')'}">
+        <div class="left-wrapper">
+          <h1>We make it Super <br> Simple</h1>
+          <div class="middle-img">
+            <img src="../assets/images/collect_img-video.png" alt="video" />
+          </div>
+          <div class="bottom-img">
+            <img src="../assets/images/accounting_dots.svg" alt="video" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="bg-big" [ngStyle]="{'background-image': 'url(' + bgBig + ')'}">
+        <div class="right-wrapper">
+          <div class="form-wrapper bg-white form-wrapper shadow">
+            <h2 class="title">Eligibility Calculator</h2>
+            <form class="px-5 pt-3 pb-5">
+              <div class="w-100">
+                <div class="form-group">
+                  <label class="mb-2">Monthly Income</label>
+                  <p id="rangeval" class="m-0">&#8377; {{value}}
+                    <!-- Default value -->
+                  </p>
+                  <mat-slider class="example-margin" name="Salary" [max]="max" [min]="min" [(ngModel)]="value">
+                  </mat-slider>
+                  <div class="d-flex justify-content-between note mt-1">
+                    <span>{{min}}</span>
+                    <span>{{max}}</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="mb-2">Monthly Expences</label>
+                  <p id="rangeval" class="m-0">&#8377; {{value1}}
+                    <!-- Default value -->
+                  </p>
+                  <mat-slider class="example-margin" name="Salary" [max]="max1" [min]="min1" [(ngModel)]="value1">
+                  </mat-slider>
+                </div>
+                <div class="form-group">
+                  <label class="mb-2">Repayment Tenure</label>
+                  <mat-select [(ngModel)]="selectedValue" name="food">
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-switch p-0 d-flex align-items-center justify-content-between">
+                    <label>Do you have any existing loans? </label>
+                    <div>
+                      <input class="custom-control-input ng-valid ng-dirty ng-touched" id="shareSamples"
+                        name="shareSamples" tabindex="2" type="checkbox" ng-reflect-maxlength="50"
+                        ng-reflect-name="shareSamples" ng-reflect-model="false" maxlength="50">
+                      <label class="custom-control-label" for="shareSamples"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <mat-form-field class="w-100">
+                    <mat-label>EMI of existing loan (optional)</mat-label>
+                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                  </mat-form-field>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <div class="form-wrapper-bg money-card">
+            <span class="money-banner">Loan Amount
+            </span>
+            <span class="money-banner-amt">
+              <h2>&#8377; 100,000</h2>
+            </span>
+            <span class="emi-banner">
+             Your EMI will be
+            </span>
+            <span class="emi-banner-amt">
+              <h2>&#8377; 15,000</h2>
+            </span>
+            <span class="get-money-btn">
+              <h2 class="btn-emi-txt">GET MONEY</h2>
+            </span>
+          </div>
+          <div class="bottom-img text-right mt-n5 offset-5">
+            <img src="../assets/images/accounting_dots.svg" alt="video" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-banner">
+  <div class="wrapper" [ngStyle]="{'background-image': 'url(' + bgWave + ')'}">
+    <div class="left-section">
+      <div class="bg-small">
+        <div class="left-wrapper">
+          <div class="first-img">
+            <div> <img src="../assets/images/Get Paid Instantly.png" alt="video" class="icon" /></div>
+            <div class="card-text">
+              <h2>Quick cash disbursement</h2>
+            </div>
+            <p class="card-text-description">Get terms loans that your business needs within 72 hrs</p>
+          </div>
+          <div class="second-img">
+            <img src="../assets/images/Low interest rate.png" alt="video" class="icon" />
+            <div class="card-text">
+              <h2>Low-interest rate</h2>
+            </div>
+            <p class="card-text-description">Achieve your financial goals with an amazing interest rate starting at 13%
+              per annum</p>
+          </div>
+          <div class="third-img">
+            <img src="../assets/images/Secure Payments.png" alt="video" class="icon" />
+            <div class="card-text">
+              <h2>Zero Paperwork</h2>
+            </div>
+            <p class="card-text-description">Get started instantly by submitting only your basic details & bank
+              statements</p>
+          </div>
+
+        </div>
+        <div class="middle-wrapper">
+          <div class="second-img">
+            <img src="../assets/images/freelancer_feature_icon_6@1.5x.png" alt="video" class="icon" />
+            <div class="card-text">
+              <h2>Ace your business finances</h2>
+            </div>
+            <p class="card-text-description">Manage banking, accounting & everything in between, on one platform</p>
+          </div>
+          <div class="third-img">
+            <img src="../assets/images/Get Paid Instantly.png" alt="video" class="icon" />
+            <div class="card-text">
+              <h2>Loans to fight COVID-19</h2>
+            </div>
+            <p class="card-text-description">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="bg-big">
+        <div class="section-wrapper">
+          <h1>Boost your bussiness <br>with Open</h1>
+          <h3 class="banner-text">Get your hands on a term loan that’s crafted for your business <br>with Open</h3>
+          <span class="get-money-btn">
+            <h2 class="btn-emi-txt">GET MONEY</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
